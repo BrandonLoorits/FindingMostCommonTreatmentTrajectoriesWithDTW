@@ -226,7 +226,7 @@ def klasterdaUus(ainult_trajektoorid,klastriteArv,cdistPath,piir,tee,klNR):
                 koosta_dendrogramm(clusterer,n_clusters)
 
                 ax2.set_title("Puudiagramm")
-                ax1.set_ylabel("Sulgudes alluvate arv, sulgudeta trajektoori indeks")
+                ax2.set_ylabel("Sulgudes alluvate arv, sulgudeta trajektoori indeks")
 
                 plt.suptitle(("Siluetianalüüs "
                             "klastrite arvuga: %d" % n_clusters),

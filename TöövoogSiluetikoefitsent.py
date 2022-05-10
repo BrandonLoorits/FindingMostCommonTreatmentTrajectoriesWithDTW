@@ -204,7 +204,7 @@ def klasterdaUus(ainult_trajektoorid,klastriteArv,cdistPath,piir,tee,valPikkus):
                 koosta_dendrogramm(clusterer,n_clusters)
 
                 ax2.set_title("Puudiagramm")
-                ax1.set_ylabel("Sulgudes alluvate arv, sulgudeta trajektoori indeks")
+                ax2.set_ylabel("Sulgudes alluvate arv, sulgudeta trajektoori indeks")
 
                 plt.suptitle(("Siluetianalüüs "
                             "klastrite arvuga: %d" % n_clusters),
@@ -496,7 +496,7 @@ def leiaAlgtabelist(tee,tulemusTrajid):
     return tulemused,trajArv,arv,m,oigedKlastrid
 
 # Muuta ainult ülakomade vahel olevat müra taset
-myraTase = '0'
+myraTase = '10'
 # Sisesta kaust, kuhu soovid tulemused salvestada ja, kus asuvad valideerimise tabel ning andmete alusfail
 tee = "C:/Users/Brandon Loorits/Desktop/ulikool/5.semester/loputoo/graafikud/myra"+myraTase+"/"
 alusfail = "Brandon_FINAL_ALL_DATA_"+myraTase+"_NOISE.csv"
@@ -508,7 +508,7 @@ taisTee = tee+alusfail
 # Sisesta siluetikoefitsendi väärtus, millest väiksemate tulemuste puhul mudelit ei koosatata
 piir = 0.1
 # Sisesta klastrtite arvu ülem piir, alampiiriks on valideerimistabelis leiduvate trajektooride arv
-klastriteArv = 10
+klastriteArv = 25
 # Sisesta trajektooride esinemiste osakaal klastris. Trajektoorid, mille esinemiste osakaal klastris on väiksem kui sisestatud osakaal jäetakse klastrist välja
 osakaal = 15.0
 
