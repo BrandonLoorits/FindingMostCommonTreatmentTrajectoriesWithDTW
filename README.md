@@ -22,3 +22,4 @@ Töövoo käivitamisel on võimalik sisestada erinevaid parameetreid:
 2. osakaal - kui trajektoori esinemiste arvu osakaal klastris väiksem kui sisestatud osakaal, siis need trajektoorid eemaldatakse klastrist
 3. piir - kui siluetikoefitsent alla etteantud piiri, siis mudelit ei salvestata
    
+kaustadAndmetega kaustas on leitavad andmed ning kaustades myra0 ja myra10 on leitavad ka näited tulemuste visualisatsioonidest
