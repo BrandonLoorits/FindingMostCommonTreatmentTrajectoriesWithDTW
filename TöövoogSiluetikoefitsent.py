@@ -108,6 +108,7 @@ def leiaAlgtabeliPikkus(tee):
 # Funktsioon hierarhilise klasterdamise puudiagrammi visualiseerimiseks
 # kasutatud alusena scikit-learn ametlikul lehel näidet:
 # https://scikit-learn.org/stable/auto_examples/cluster/plot_agglomerative_dendrogram.html#sphx-glr-auto-examples-cluster-plot-agglomerative-dendrogram-py
+# Pedregosa F., Varoquaux G., Gramfort A. jt. Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research. 2011, Vol 12, pp. 2825-2830.
 
 def koosta_dendrogramm(model,klasNR):
     counts = np.zeros(model.children_.shape[0])
@@ -136,6 +137,9 @@ def koosta_dendrogramm(model,klasNR):
 
 # Funktsioon klasterdamis mudelite koostamiseks, siluetidiagrammi ja puudiagrammi visualiseerimiseks
 # Klasterdamise meetodi sisendiks olev sarnasusmaatriks peab olema varasemalt välja arvutatud faili arvutaSarnasusmaatriks.py abil
+# Aluseks võetud scikit-learni veebilehel olev kood:
+# https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html
+# Pedregosa F., Varoquaux G., Gramfort A. jt. Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research. 2011, Vol 12, pp. 2825-2830.
 
 def klasterdaUus(ainult_trajektoorid,klastriteArv,cdistPath,piir,tee,valPikkus):
     skoorid = []
